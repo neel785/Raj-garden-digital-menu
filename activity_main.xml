@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="142dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rajlogo" />
+
+    <ImageButton
+        android:id="@+id/soup"
+        android:layout_width="114dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/starter"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/sp" />
+
+    <ImageButton
+        android:id="@+id/starter"
+        android:layout_width="114dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/st" />
+
+    <ImageButton
+        android:id="@+id/chinese"
+        android:layout_width="114dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/pb"
+        app:layout_constraintTop_toBottomOf="@+id/soup"
+        app:srcCompat="@drawable/ch" />
+
+    <ImageButton
+        android:id="@+id/pb"
+        android:layout_width="114dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starter"
+        app:srcCompat="@drawable/pb" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
